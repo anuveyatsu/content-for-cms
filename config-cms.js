@@ -11,25 +11,34 @@ export default {
       {
         name: 'pages',
         label: 'Pages',
+        label_singular: 'Page',
+        description: 'Static pages, e.g., About page.',
         files: [
           {
-            label: 'Home',
-            name: 'home',
-            file: 'content/pages/home.md',
+            label: 'About',
+            name: 'about',
+            file: 'content/pages/about.md',
             fields: [
-              {
-                label: 'Hero Title',
-                name: 'hero_title',
-                widget: 'string',
-              },
-              {
-                label: 'Hero Description',
-                name: 'hero_description',
-                widget: 'markdown',
-              },
-            ],
+              {label: 'Title', name: 'title', widget: 'string'},
+              {label: 'Publish Date', name: 'date', widget: 'datetime'},
+              {label: 'Featured Image', name: 'thumbnail', widget: 'image'},
+              {label: 'Body', name: 'body', widget: 'markdown'}
+            ]
           },
         ],
+      },
+      {
+        name: 'blog',
+        label: 'Blog',
+        description: 'Blog posts.',
+        folder: 'content/blog',
+        create: true,
+        fields: [
+          {label: 'Title', name: 'title', widget: 'string'},
+          {label: 'Publish Date', name: 'date', widget: 'datetime'},
+          {label: 'Featured Image', name: 'thumbnail', widget: 'image'},
+          {label: 'Body', name: 'body', widget: 'markdown'}
+        ]
       },
     ],
   };
