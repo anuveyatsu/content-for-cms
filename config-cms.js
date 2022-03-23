@@ -4,7 +4,8 @@ export default {
       name: 'github',
       repo: 'anuveyatsu/content-for-cms',
       branch: 'main',
-      base_url: 'https://netlify-cms-oauth-swart.vercel.app'
+      base_url: 'https://netlify-cms-oauth-swart.vercel.app',
+      site_url: 'https://netlify-cms-demo-ebon.vercel.app'
     },
     media_folder: 'public/img',
     public_folder: 'img',
